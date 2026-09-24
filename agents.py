@@ -9,7 +9,7 @@ from langchain_mistralai import ChatMistralAI
 
 load_dotenv()
 
-mistral_key = os.getenv("MISTRAL_API_KEY")
+mistral_key = st.secrets.get("MISTRAL_API_KEY") or os.getenv("MISTRAL_API_KEY")
 
 # Spaces out Mistral calls to avoid 429 "Rate limit exceeded" errors
 rate_limiter = InMemoryRateLimiter(
