@@ -34,27 +34,40 @@ header[data-testid="stHeader"] {background: transparent;}
 [data-testid="stMarkdownContainer"] th {background: #dfe3fa;}
 [data-testid="stMarkdownContainer"] td {background: #ffffff;}
 
+/* Sidebar Toggle Buttons - Always Visible (Normal, Focus, Active) */
 button[data-testid="stSidebarCollapseButton"], 
 [data-testid="stSidebarHeader"] button,
-header[data-testid="stHeader"] button {
+header[data-testid="stHeader"] button,
+button[data-testid="stSidebarCollapseButton"]:focus,
+[data-testid="stSidebarHeader"] button:focus,
+header[data-testid="stHeader"] button:focus {
     background-color: #312e81 !important;
     border-radius: 10px !important;
     padding: 6px !important;
     box-shadow: 0 4px 12px rgba(49, 46, 129, 0.25) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
+/* Sidebar Toggle SVG Icon - Always Visible */
 button[data-testid="stSidebarCollapseButton"] svg, 
 [data-testid="stSidebarHeader"] button svg,
-header[data-testid="stHeader"] button svg {
+header[data-testid="stHeader"] button svg,
+button[data-testid="stSidebarCollapseButton"]:focus svg,
+[data-testid="stSidebarHeader"] button svg:focus,
+header[data-testid="stHeader"] button svg:focus {
     fill: #ffffff !important;
     stroke: #ffffff !important;
     color: #ffffff !important;
     width: 22px !important;
     height: 22px !important;
+    opacity: 1 !important;
 }
 
+/* Sidebar Toggle Hover State */
 button[data-testid="stSidebarCollapseButton"]:hover, 
-[data-testid="stSidebarHeader"] button:hover {
+[data-testid="stSidebarHeader"] button:hover,
+header[data-testid="stHeader"] button:hover {
     background-color: #4f46e5 !important;
     transform: scale(1.05);
 }
