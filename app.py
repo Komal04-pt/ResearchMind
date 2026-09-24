@@ -41,6 +41,19 @@ header[data-testid="stHeader"] {background: transparent;}
 [data-testid="stMarkdownContainer"] th {background: #dfe3fa;}
 [data-testid="stMarkdownContainer"] td {background: #ffffff;}
 
+/* ---------- Sidebar Toggle Fix ---------- */
+[data-testid="stSidebarCollapseButton"] button {
+    color: #312e81 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #cfd5f3 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08) !important;
+}
+[data-testid="stSidebarCollapseButton"] button:hover {
+    background-color: #eef0fc !important;
+    color: #4f46e5 !important;
+}
+
 /* ---------- Hero banner ---------- */
 .hero {
     position: relative; overflow: hidden; margin-bottom: 26px;
