@@ -43,39 +43,36 @@
 ```
 🚀 Getting Started
 1. Clone the Repository
-Bash
 git clone https://github.com/Komal04-pt/ResearchMind.git
 cd ResearchMind
-2. Set Up Virtual Environment
-Bash
+
+3. Set Up Virtual Environment
+
 python -m venv .venv
 Activate Environment:
 
 Windows:
-
 DOS
 .venv\Scripts\activate
 macOS / Linux:
 
-Bash
 source .venv/bin/activate
+
 3. Install Dependencies
-Bash
 pip install -r requirements.txt
+
 4. Set Up Environment Variables
 Create a .env file in the root directory and add your required API keys:
 
 Code snippet
 MISTRAL_API_KEY=your_mistral_api_key
 TAVILY_API_KEY=your_tavily_api_key
+
 5. Run the Application
-Bash
 streamlit run app.py
+
 📸 How It Works
 Input Topic: Enter any research query or choose from suggested example topics.
-
 Pipeline Execution: Watch the 4 agents complete their designated tasks in sequence (pipeline.py).
-
 Review Output: View the final report, critic evaluation, reader summary, and raw search results across structured tabs.
-
 Download: Export the complete report including critic notes as a .md file.
