@@ -1,5 +1,7 @@
 # 🧠 ResearchMind — Multi-Agent AI Research Team
 
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-ResearchMind-indigo?style=for-the-badge)]([YOUR_LIVE_URL_HERE](https://researchmind-fqmakjd4qczxteit3fyzzx.streamlit.app/))
+
 **ResearchMind** is an automated, multi-agent AI research workspace built with Python and Streamlit. It orchestrates a team of specialized AI agents working together in a sequential pipeline to search, analyze, draft, and critique comprehensive research reports on any topic in real time.
 
 ---
