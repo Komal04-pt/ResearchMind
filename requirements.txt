@@ -10,6 +10,7 @@ streamlit
 
 # Search Tools & Utilities
 duckduckgo-search>=6.0.0
+ddgs
 tavily-python>=0.3.0
 
 # Web scraping
