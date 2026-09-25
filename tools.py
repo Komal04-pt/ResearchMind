@@ -3,11 +3,18 @@ import requests
 from bs4 import BeautifulSoup
 from tavily import TavilyClient
 import os
+import streamlit as st
 from dotenv import load_dotenv
 from rich import print
 load_dotenv()
 
-tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
+try:
+    tavily_key = st.secrets.get("TAVILY_API_KEY")
+except Exception:
+    tavily_key = None
+tavily_key = tavily_key or os.getenv("TAVILY_API_KEY")
+
+tavily = TavilyClient(api_key=tavily_key)
 
 @tool
 def web_search(query: str) -> str:
